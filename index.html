@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
 
-  Features
-  Company
-  Careers
-  About
+  <body>
+    <header class="container flex justify-center item-center">
+      <img class="logo" src="./images/logo.svg" alt="" srcset="" />
+      
+      <nav class="nav-bar" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="dropdown nav-link">
+            <button
+              type="button"
+              class="dropdown__title"
+              aria-expanded="false"
+              aria-controls="feature-dropdown"
+            >
+              Features
+            </button>
+            <img class="up-arrow" src="./images/icon-arrow-down.svg" alt="" srcset="">
+            <ul class="dropdown-menu" id="feature-dropdown">
+              <li><img class="icon" src="./images/icon-todo.svg" alt="" srcset=""><a href="#">Todo List</a></li>
+              <li><img class="icon" src="./images/icon-calendar.svg" alt="" srcset=""><a href="#">Calendar</a></li>
+              <li><img class="icon" src="./images/icon-reminders.svg" alt="" srcset=""><a href="#">Reminders</a></li>
+              <li><img class="icon" src="./images/icon-planning.svg" alt="" srcset=""><a href="#">Planning</a></li>
+            </ul>
+          </li>
+          <li class="nav-link">
+            <button
+              type="button"
+              class="dropdown__title"
+              aria-expanded="false"
+              aria-controls="company-dropdown"
+            >
+              Company
+            </button>
+            <img class="up-arrow" src="./images/icon-arrow-down.svg" alt="" srcset="">
+            <ul class="dropdown-menu" id="company-dropdown">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-link"><a href="#">Careers</a></li>
+          <li class="nav-link"><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="log">
+        <a href="">Login</a>
+        <a href="">Register</a>
+      </div>
+    </header>
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jayant Babbar</a>.
+    </div>
+  </body>
 </html>
