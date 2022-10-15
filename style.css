@@ -8,7 +8,7 @@
 
 body {
   font-family: "Epilogue", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   background-color: var(--primary);
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-  padding: 20px;
+  padding: 25px;
   width: 100%;
 }
 
@@ -50,7 +50,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  margin-left: -32em;
+  margin-left: -38em;
 }
 
 .nav-link {
@@ -85,7 +85,7 @@ a {
   transition: 280ms all ease-out;
 }
 
-.dropdown-menu:hover{
+.dropdown-menu:hover {
   opacity: 1;
   transform: rotateX(0) translateX(-50%);
   visibility: visible;
@@ -103,4 +103,48 @@ a {
 
 .icon {
   margin-right: 0.7em;
+}
+
+.log > a:nth-child(2) {
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* .log {
+  margin-left: 2%;
+  margin-right: 4%;
+} */
+
+.log > a:nth-child(1) {
+  margin-right: 28px;
+}
+
+/* .hero{
+  display: flex; */
+/* justify-content: space-between;
+  padding: 40px;
+  margin-top: 7%; */
+
+.info-head {
+  font-size: 100px;
+  font-weight: 700;
+  margin-top: 137px;
+  /* margin-left: 10%;
+  margin-right: -17%; */
+}
+
+.hero-img {
+  margin-right: 6%;
+  margin-top: 4%;
+}
+
+/* .info {
+    margin-left: 36px;
+} */
+
+.info-text {
+  line-height: 130%;
+  font-size: 22px;
+  color: var(--secondary);
 }
