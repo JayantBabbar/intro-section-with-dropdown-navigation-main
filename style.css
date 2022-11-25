@@ -72,7 +72,7 @@ a {
 }
 
 .dropdown-menu {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--primary);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 1em 1em;
@@ -111,27 +111,15 @@ a {
   padding: 10px;
 }
 
-/* .log {
-  margin-left: 2%;
-  margin-right: 4%;
-} */
-
 .log > a:nth-child(1) {
   margin-right: 28px;
 }
 
-/* .hero{
-  display: flex; */
-/* justify-content: space-between;
-  padding: 40px;
-  margin-top: 7%; */
-
 .info-head {
-  font-size: 100px;
   font-weight: 700;
-  margin-top: 137px;
-  /* margin-left: 10%;
-  margin-right: -17%; */
+  font-size: 85px;
+  margin-top: 144px;
+  margin-bottom: 51px;
 }
 
 .hero-img {
@@ -139,12 +127,30 @@ a {
   margin-top: 4%;
 }
 
-/* .info {
-    margin-left: 36px;
-} */
-
 .info-text {
   line-height: 130%;
-  font-size: 22px;
+  font-size: 18px;
   color: var(--secondary);
+}
+
+.btn {
+  margin-top: 51px;
+  padding: 2.5% 6%;
+  color: var(--primary);
+  background: var(--ternary);
+  border-radius: 9px;
+  border: none;
+  padding: 2;
+  font-size: 18px;
+}
+
+.info {
+  margin: 0 0 51px 150px;
+  margin-left: 160px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
 }
